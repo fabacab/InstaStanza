@@ -16,6 +16,9 @@ repeat with i from z to n
 	set the clipboard to x as string
 	
 	tell application "Stanza" to activate
+	
+	delay 2 -- pause a bit and let's catch up
+	
 	tell application "System Events"
 		tell process "Stanza"
 			keystroke "l" using command down
@@ -23,6 +26,9 @@ repeat with i from z to n
 			keystroke return
 		end tell
 	end tell
+	
+	delay 1
+	
 end repeat
 
 set the clipboard to clip -- restore original clipboard contents
