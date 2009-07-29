@@ -28,7 +28,7 @@ repeat with i from z to n
 	end tell
 	
 	delay 1
-	
 end repeat
 
+tell application "Safari" to activate -- return to Safari
 set the clipboard to clip -- restore original clipboard contents
